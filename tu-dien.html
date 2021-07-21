@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p> GOOGLE CUA BAN </p>
+    <input type="text" value="" id="surch">
+    <input type="button" onclick="clickme()" value="tim kiem">
+    <p id="input"></p>
+
+</form>
+
+<script>
+
+    function clickme() {
+        let transelate = document.getElementById("surch").value;
+        let els = ["my love", "window", "cat", "number"]
+        let vns = ["tinh yeu", "cua so", "meo", "so"]
+        let index = -1;
+        for (let i = 0; i < els.length; i++) {
+            if (transelate == els[i]) {
+                index = i;
+                break;
+            }
+        }
+        if (index === -1) {
+            alert("Khong tim thay")
+        } else {
+            alert(vns[index])
+        }
+    }
+</script>
+</body>
+</html>

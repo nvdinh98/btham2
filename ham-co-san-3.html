@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let str = "c an shit ";
+  // let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ';
+  // let lower = 'abcdefghijklmnopqrstuvwxyz ';
+  // let result = [];
+  // for ( let x = 0; x < str.length; x++ ) {
+  //   for ( let y = 0; y < UPPER.length; y++) {
+  //     if ( str[ x ] == UPPER[y]){
+  //       result.push(lower[y]);
+  //     } else if ( str[x] == lower[y]) {
+  //       result.push(UPPER[y]);
+  //     }
+  //
+  //   }
+  // }
+// console.log(result);
+
+  let str = "anh yeu em rat nhieu ";
+  let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ';
+  let lower = 'abcdefghijklmnopqrstuvwxyz ';
+  let result = [];
+  for ( let x = 0; x < str.length; x++) {
+    for ( let y = 0; y < UPPER.length; y++ ) {
+      if ( str[x] == UPPER[y]) {
+        result.push(lower[y]);
+      } else if ( str[x] == lower[y] ) {
+        result.push(UPPER[y]);
+      }
+    }
+  }
+  console.log(result.join(""));
+</script>
+</body>
+</html>
